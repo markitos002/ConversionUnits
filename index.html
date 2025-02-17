@@ -12,9 +12,12 @@
         </header>
         <nav>
           <div class="topdiv">
-            <a href="#temperature"><button  class="topmenu">Temperature</button></a>
-            <a href="#weight"><button  class="topmenu">Weight</button></a>
-            <a href="#distance"><button  class="topmenu">Distance</button></a>
+            <a href="#temperature-c-to-f"><button class="topmenu">Temperature C to F</button></a>
+            <a href="#temperature-f-to-c"><button class="topmenu">Temperature F to C</button></a>
+            <a href="#weight"><button class="topmenu">Pounds to Kilograms</button></a>
+            <a href="#weight"><button class="topmenu">Kilograms to Pounds</button></a>
+            <a href="#distance"><button class="topmenu">Miles to Kilometers</button></a>
+            <a href="#distance"><button class="topmenu">Kilometers to Miles</button></a>            
           </div>
         </nav>
       </section>    
@@ -25,7 +28,7 @@
           <div id="tmp">
             <figure>
               <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/thermo.png" width="150px"/>
-              <figcaption>Celcius to Farenheit Conversion</figcaption>
+              <figcaption>Celsius to Farenheit Conversion</figcaption>
             </figure>
             <article> 
 
@@ -42,9 +45,30 @@
                 To convert celsuis to fahrenheit yourself, use this formula replacing the `C` with your temperature in celsuis: (C × 9/5) + 32
               </aside>
             </article>
-          </div>
+          </div>          
         </section>
         <div style="clear:both;"></div>
+
+        <section id="temperature-f-to-c" class="b temperature">
+          <div id="tmp">
+            <figure>
+              <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/thermo.png" width="150px"/>
+              <figcaption>Farenheit to Celsius Conversion</figcaption>
+            </figure>
+            <article> 
+              <fieldset>
+                <legend>Temperature</legend>
+                <label for="Temperature">Fahrenheit</label> <br/>
+                <input type="number" id="fahrenheit"> <br/>
+                <button id="temperature" onclick="temperature()"> Convert </button> <br/>
+                <input type="number" id="celsius"> <br/>
+                <label for="Temperature">Celsius</label>
+              </fieldset>
+              <aside>
+                To convert fahrenheit to celsius yourself, use this formula replacing the `F` with your temperature in fahrenheit: (F − 32) × 5/9
+              </aside>
+            </article>
+          </div>
       
         <section id="weight"  class="b weight">          
           <div id="wgt">
