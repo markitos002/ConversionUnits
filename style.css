@@ -123,12 +123,14 @@ footer {
 
 .conversion-pair {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 20px;
 }
 
 .conversion-pair section {
   width: 48%;
+  margin-bottom: 20px;
 }
 
 /* Media query for screens smaller than 600px */
@@ -139,6 +141,5 @@ footer {
 
   .conversion-pair section {
     width: 100%;
-    margin-bottom: 20px;
   }
 }
