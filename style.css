@@ -15,7 +15,7 @@ body{
    }
 /* Application name inside the home section. The styling is applied by tag name */
   header {
-    font-size: 30px;
+    font-size: 40px;
     color: rgb(240, 234, 245);
     float: left;
     padding-left: 2cm;
