@@ -14,24 +14,23 @@
           <div class="topdiv">
             <a href="#temperature-c-to-f"><button class="topmenu">Temperature C to F</button></a>
             <a href="#temperature-f-to-c"><button class="topmenu">Temperature F to C</button></a>
-            <a href="#weight"><button class="topmenu">Pounds to Kilograms</button></a>
-            <a href="#weight"><button class="topmenu">Kilograms to Pounds</button></a>
-            <a href="#distance"><button class="topmenu">Miles to Kilometers</button></a>
-            <a href="#distance"><button class="topmenu">Kilometers to Miles</button></a>            
+            <a href="#weight-p-to-k"><button class="topmenu">Pounds to Kilograms</button></a>
+            <a href="#weight-k-to-p"><button class="topmenu">Kilograms to Pounds</button></a>
+            <a href="#distance-k-to-m"><button class="topmenu">Miles to Kilometers</button></a>
+            <a href="#distance-m-to-k"><button class="topmenu">Kilometers to Miles</button></a>            
           </div>
         </nav>
       </section>    
       <div style="clear:both;"></div>
      
       <div id="all-conversion-sections">
-        <section id="temperature"  class="b temperature">
+        <section id="temperature-c-to-f"  class="b temperature">
           <div id="tmp">
             <figure>
               <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/thermo.png" width="150px"/>
               <figcaption>Celsius to Farenheit Conversion</figcaption>
             </figure>
-            <article> 
-
+            <article>
               <fieldset>
                 <legend>Temperature</legend>
                 <label for="Temperature">Celsius</label> <br/>
@@ -40,7 +39,6 @@
                 <input type="number" id="fahrenheit"> <br/>
                 <label for="Temperature">Fahrenheit</label>
               </fieldset>
-
               <aside>
                 To convert celsuis to fahrenheit yourself, use this formula replacing the `C` with your temperature in celsuis: (C × 9/5) + 32
               </aside>
@@ -68,16 +66,41 @@
                 To convert fahrenheit to celsius yourself, use this formula replacing the `F` with your temperature in fahrenheit: (F − 32) × 5/9
               </aside>
             </article>
-          </div>
-      
-        <section id="weight"  class="b weight">          
-          <div id="wgt">
+          </div>      
+        </section>
+          <div style="clear:both;"></div>
+
+
+          <section id="weight-p-to-k"  class="b weight">
+            <div id="wgt">
+              <figure>
+                <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/weight.png"  width="150px"/>
+                <figcaption>Pounds to Kilogram Conversion</figcaption>
+              </figure>
+              <article>
+                <fieldset>
+                  <legend>Weight</legend>
+                  <label for="Weight">Pounds</label> <br/>
+                  <input type="number" id="pounds"> <br/>
+                  <button id="weight" onclick="weight()"> Convert </button>  <br/>
+                  <input type="number" id="kg">  <br/>
+                  <label for="Weight">KG</label>    
+                </fieldset>
+                <aside>
+                  To convert pounds to kilograms yourself, use this formula replacing the `pounds` with your weight in pounds: pounds ÷ 2.205
+                </aside>      
+              </article>
+            </div>
+          </section>
+          <div style="clear:both;"></div>              
+        
+          <section id="weight-k-to-p"  class="b weight">
+            <div id="wght">
             <figure>
               <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/weight.png"  width="150px"/>
               <figcaption>Kilograms to Pound Conversion</figcaption>
             </figure>            
             <article>
-
               <fieldset>
                 <legend>Weight</legend>
                 <label for="Weight">KG</label> <br/>
@@ -93,7 +116,8 @@
           </div>
         </section>
         <div style="clear:both;"></div>
-        <section id="distance"  class="b distance">
+
+        <section id="distance-k-to-m"  class="b distance">
           <div id="dst">
             <figure>
               <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/speedo.png"  width="150px"/>
@@ -110,12 +134,35 @@
               </fieldset>
               <aside>
                 To convert kilometers to miles yourself, use this formula replacing the `km` with your distance in kilmeters: km &divide; 1.609
-              </aside>
-    
+              </aside>    
             </article>
           </div>
         </section>
         <div style="clear:both;"></div>
+
+        <section id="distance-m-to-k"  class="b distance">
+          <div id="dst">
+            <figure>
+              <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/speedo.png"  width="150px"/>
+              <figcaption>Miles to Kilometers Conversion</figcaption>
+            </figure>
+            <article>
+              <fieldset>
+                <legend>Distance</legend>
+                  <label for="Distance">Miles</label> <br/>
+                  <input type="number" id="miles">  <br/>
+                  <button id="distance" onclick="distance()"> Convert </button> <br/>
+                  <input type="number" id="km">  <br/>
+                  <label for="Distance">KM</label>
+              </fieldset>
+              <aside>
+                To convert miles to kilometers yourself, use this formula replacing the `miles` with your distance in miles: miles x 1.609
+              </aside>    
+            </article>
+          </div>
+        </section>
+        <div style="clear:both;"></div>
+
       </div>
     <div id="go-home" class="iconbutton">
       <a href="#home">
