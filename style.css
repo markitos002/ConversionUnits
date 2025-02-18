@@ -124,9 +124,21 @@ footer {
 .conversion-pair {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1px;
+  margin-bottom: 20px;
 }
 
 .conversion-pair section {
-  width: 49%;
+  width: 48%;
+}
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+  .conversion-pair {
+    flex-direction: column;
+  }
+
+  .conversion-pair section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
